@@ -1,0 +1,26 @@
+{
+    "bindings": [
+      {
+        "type": "table",
+        "name": "keyTable",
+        "tableName": "UrlsDetails",
+        "partitionKey": "1",
+        "rowKey": "KEY",
+        "take": "1",
+        "connection": "UlsDataStorage",
+        "direction": "in"
+      },
+      {
+        "type": "httpTrigger",
+        "name": "req",
+        "authLevel": "function",
+        "direction": "in"
+      },
+      {
+        "type": "http",
+        "name": "$return",
+        "direction": "out"
+      }
+    ],
+    "disabled": false
+  }
